@@ -1,11 +1,7 @@
 import { test, expect } from '../src/fixtures/pages.fixture';
 import { loginAndSetToken } from '../src/helpers/loginViaAPI';
 import { faker } from '@faker-js/faker';
-
-const credentials = {
-  email: 'a.kortikova12321232@gmail.com',
-  password: '12345',
-};
+import { credentials } from '../src/test-data/credentials.local';
 
 const article = {
     title: faker.lorem.words(3),
